@@ -370,3 +370,18 @@ func (c *Client) NewGetBalanceService() *GetBalanceService {
 func (c *Client) NewGetPositionRiskService() *GetPositionRiskService {
 	return &GetPositionRiskService{c: c}
 }
+
+// NewListPriceChangeStatsService init list prices change stats service
+func (c *Client) NewListPriceChangeStatsService() *ListPriceChangeStatsService {
+	return &ListPriceChangeStatsService{c: c}
+}
+
+// NewListPricesService init listing prices service
+func (c *Client) NewListPricesService() *ListPricesService {
+	return &ListPricesService{c: c}
+}
+
+// NewListBookTickersService init listing booking tickers service
+func (c *Client) NewListBookTickersService() *ListBookTickersService {
+	return &ListBookTickersService{c: c}
+}
